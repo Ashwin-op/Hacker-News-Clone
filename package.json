@@ -1,12 +1,18 @@
 {
   "name": "hackernews-clone",
+  "description": "A simple Hacker News clone made using Next.js, Tailwind CSS and Typescript",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "author": {
+    "name": "Ashwin"
+  },
+  "homepage": "https://github.com/Ashwin-op/Hacker-News-Clone",
   "dependencies": {
     "autoprefixer": "^10.1.0",
     "axios": "^0.21.1",
