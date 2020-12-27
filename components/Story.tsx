@@ -6,11 +6,27 @@ import {getStory} from "../services/api";
 
 const Story = ({storyId}) => {
 
-    const [story, setStory] = useState({});
+    const [story, setStory] = useState({
+        url: null,
+        type: null,
+        title: null,
+        by: null,
+        time: null,
+        score: null,
+        descendants: null
+    });
 
     useEffect(() => {
         getStory(storyId).then(data => data && data.url && setStory(data));
-        return () => setStory({});
+        return () => setStory({
+            by: null,
+            descendants: null,
+            score: null,
+            time: null,
+            title: null,
+            type: null,
+            url: null
+        });
     }, []);
 
     return story && story.url ? (
